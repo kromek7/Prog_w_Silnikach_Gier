@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class PlatformMove : MonoBehaviour
 {
-    public float moveSpeed = 10f;
+    public int moveSpeed = 10;
 
+    private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
+
+        //transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
+
+        rb.velocity = transform.forward * -1 * moveSpeed *Time.fixedDeltaTime;
     }
 }

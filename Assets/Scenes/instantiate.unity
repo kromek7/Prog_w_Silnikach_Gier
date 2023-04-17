@@ -363,7 +363,7 @@ MonoBehaviour:
   - {fileID: 1164629727352283941, guid: c748e3eb8acc6e742a8fc767a672a01d, type: 3}
   spawningZPos: 50
   lengthOfSection: 50
-  numberOfTilesSpawningAtStart: 5
+  numberOfTilesSpawningAtStart: 20
 --- !u!4 &404401640
 Transform:
   m_ObjectHideFlags: 0
